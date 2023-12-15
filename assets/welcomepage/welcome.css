@@ -1,0 +1,25 @@
+.logged-message {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 30px;
+    position: absolute;
+    background-color: #FEFEFE;
+    color: #8B302D;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h2 > span {
+    font-weight: bold;
+}

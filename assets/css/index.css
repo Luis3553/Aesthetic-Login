@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+    outline: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url(../img/BG\ 1.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trees {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Trees.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+main {
+    width: 560px;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 0px 40px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    border-radius: 31px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 4px 9px 50px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    display: flex;
+    padding: 10px 40px 20px 40px;
+    flex-direction: column;
+}
+
+.create-text {
+    color: #8B302D;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px 0px -10px 0px;
+    text-align: center;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 42.5px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FEFEFE;
+    border: 0;
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+
+.header-birth-date-box {
+    margin: 17px 0px 10px 0px;
+    display: flex;
+}
+
+.birth-date {
+    color: #8B302D;
+    font-weight: 600;
+}
+
+.birth-date-box {
+    display: flex;
+    margin-bottom: 13px;
+    justify-content: space-around;
+    column-gap: 5px;
+}
+
+select {
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+button {
+    background-color: #8B302D;
+    padding: 13px 0px;
+    border: none;
+    border-radius: 10px;
+    color: #FEFEFE;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #FEFEFE;
+    color: #8B302D;
+    box-shadow: inset 0px 0px 0px 1px #8B302D;
+}
+
+.checkbox-box {
+    display: flex;
+}
+
+.offers-acceptance {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    bottom: 2.5px;
+    width: 35px;
+    height: 20px;
+}
+
+p {
+    font-size: 0.7rem;
+    margin-bottom: 13px;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+p>span {
+    font-weight: bold;
+}
+
+a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #8B302D;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #a1433f;
+}
+
+.error-message {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #8B302D;
+    width: fit-content;
+    padding: 6px 7px 5px 7px;
+    color: #FEFEFE;
+    font-size: 0.7rem;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    z-index: -1;
+    display: none;
+}
+
+.birth_error,
+.age_error {
+    border-radius: 5px;
+    background-color: #8B302D;
+    width: fit-content;
+    padding: 6px 7px 5px 7px;
+    color: #FEFEFE;
+    font-size: 0.7rem;
+    position: relative;
+    display: none;
+}
+
+.birth_error {
+    left: 10px;
+    top: -3px;
+}
+
+.age_error {
+    top: -3px;
+    left: 12px;
+}

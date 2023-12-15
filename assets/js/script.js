@@ -70,7 +70,7 @@ function inputsValidation() {
 
     if (validated) {
         localStorage.setItem('username', username.value);
-        window.location.href = './assets/welcomepage/welcome.html';
+        window.location.href = '../assets/welcomepage/welcome.html';
     }
 
     return validated;
